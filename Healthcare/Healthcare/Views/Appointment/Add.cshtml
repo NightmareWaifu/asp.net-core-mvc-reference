@@ -1,0 +1,34 @@
+﻿@model Healthcare.Models.Appointment
+@{
+}
+<h1>Appointment - Add</h1>
+
+<form method="post">
+
+    <div>
+        <label>Appointment Type</label>
+        <input type="text" asp-for="Type" />
+    </div>
+    
+    <div>
+        <label>Description</label>
+        <input type="text" asp-for="Description" />
+    </div>
+
+    <div>
+        <label>Description</label>
+        <input type="date" asp-for="Date" />
+    </div>
+
+    <div>
+        <label>WIP - TIME</label>
+        <input type="time" />
+    </div>
+
+    <div>
+        <label>Description</label>
+        <input type="text" asp-for="Doctor" />
+    </div>
+
+    <button type="submit">Create Appointment</button>
+</form>

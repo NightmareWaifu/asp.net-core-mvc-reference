@@ -1,0 +1,35 @@
+﻿@model List<Healthcare.Models.Appointment>
+@{
+}
+<h1>Appointment - Index</h1>
+
+<table class="table ">
+    <thead>
+        <tr>
+            <th>Appt ID</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Doctor</th>
+            <th>
+                @*space for delete button*@
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach(var appointment in Model)
+            {
+                <tr>
+                    <th>@appointment.Id</th>
+                    <th>@appointment.Type</th>
+                    <th>@appointment.Description</th>
+                    <th>@appointment.Date.ToString("dd-mm-yyyy")</th>
+                    <th>@appointment.Doctor</th>
+                </tr>
+            }
+    </tbody>
+</table>
+
+<h2>Image test</h2>
+<img src="../images/bocchi.jpeg" />
+
